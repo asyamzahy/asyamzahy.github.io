@@ -13,8 +13,8 @@ export const achievements: Achievement[] = [
     type: 'competition',
     year: 2026,
     title: {
-      id: 'Juara 1 Kategori Cipta Inovasi — KMIPN VIII 2026',
-      en: '1st Place Innovation Category — KMIPN VIII 2026',
+      id: 'Juara 1 Kategori Cipta Inovasi KMIPN VIII 2026',
+      en: '1st Place Innovation Category at KMIPN VIII 2026',
     },
     description: {
       id: 'Meraih juara pertama pada Kompetisi Mahasiswa Informatika Politeknik Nasional kategori Cipta Inovasi.',
@@ -26,8 +26,8 @@ export const achievements: Achievement[] = [
     type: 'competition',
     year: 2025,
     title: {
-      id: 'Juara 3 Umum — KMIPN VII 2025',
-      en: '3rd Place Overall — KMIPN VII 2025',
+      id: 'Juara 3 Umum KMIPN VII 2025',
+      en: '3rd Place Overall at KMIPN VII 2025',
     },
     description: {
       id: 'Meraih juara tiga umum pada Kompetisi Mahasiswa Informatika Politeknik Nasional.',
@@ -39,8 +39,8 @@ export const achievements: Achievement[] = [
     type: 'competition',
     year: 2026,
     title: {
-      id: 'Silver Medalist — APJC NetAcad Riders 2026',
-      en: 'Silver Medalist — APJC NetAcad Riders 2026',
+      id: 'Silver Medalist APJC NetAcad Riders 2026',
+      en: 'Silver Medalist at APJC NetAcad Riders 2026',
     },
     description: {
       id: 'Meraih medali perak pada kompetisi APJC NetAcad Riders.',
@@ -52,8 +52,8 @@ export const achievements: Achievement[] = [
     type: 'competition',
     year: 2026,
     title: {
-      id: 'Finalist — ITECHNOCUP PNJ 2026',
-      en: 'Finalist — ITECHNOCUP PNJ 2026',
+      id: 'Finalist ITECHNOCUP PNJ 2026',
+      en: 'Finalist at ITECHNOCUP PNJ 2026',
     },
     description: {
       id: 'Lolos hingga tahap final pada kompetisi ITECHNOCUP yang diselenggarakan oleh Politeknik Negeri Jakarta.',

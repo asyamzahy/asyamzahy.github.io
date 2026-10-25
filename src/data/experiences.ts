@@ -10,7 +10,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     id: 'cisco-netriders',
-    organization: 'UKM Cisco NetRiders Community — Politeknik Caltex Riau',
+    organization: 'UKM Cisco NetRiders Community, Politeknik Caltex Riau',
     role: {
       id: 'Ketua Umum',
       en: 'President',

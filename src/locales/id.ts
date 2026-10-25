@@ -11,7 +11,7 @@ export const id = {
     greeting: 'Halo, saya',
     name: 'Asyam Zahy Pratama Widodo',
     headline: 'Situs ini saya buat untuk mendokumentasikan proses belajar dan proyek yang pernah saya kerjakan bersama tim, bukan untuk pamer. Semoga bisa jadi bahan belajar dan tempat berkenalan bagi siapa pun yang ingin berdiskusi atau berkolaborasi.',
-    subtitle: 'Mahasiswa D4 Teknologi Rekayasa Komputer — Politeknik Caltex Riau',
+    subtitle: 'Mahasiswa D4 Teknologi Rekayasa Komputer, Politeknik Caltex Riau',
     cta1: 'Jelajahi Proyek Saya',
     cta2: 'Hubungi Saya',
     fields: ['Networking', 'Cybersecurity', 'Internet of Things', 'Linux & Infrastructure'],
@@ -83,6 +83,8 @@ export const id = {
     subtitle: 'Pencapaian di kompetisi dan sertifikasi profesional',
     competitions: 'Kompetisi',
     certifications: 'Sertifikasi',
+    viewCertificate: 'Lihat sertifikat',
+    closeCertificate: 'Tutup',
   },
   leadership: {
     title: 'Kepemimpinan & Aktivitas',

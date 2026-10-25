@@ -28,8 +28,8 @@ export const projects: Project[] = [
     technologies: ['ESP32', 'TDS Sensor', 'MQTT', 'Firebase Realtime Database', 'Actuators'],
 
     title: {
-      id: 'ZalaSmart — Smart Hydroponics',
-      en: 'ZalaSmart — Smart Hydroponics',
+      id: 'ZalaSmart: Smart Hydroponics',
+      en: 'ZalaSmart: Smart Hydroponics',
     },
     description: {
       id: 'Sistem hidroponik pintar untuk pemantauan dan pengendalian kondisi budidaya tanaman.',
@@ -68,8 +68,8 @@ export const projects: Project[] = [
     technologies: ['Hyperledger Fabric', 'Digital Passport', 'QR Code', 'Blockchain'],
 
     title: {
-      id: 'BenihNusa — Sertifikasi & Traceability Bibit Sawit',
-      en: 'BenihNusa — Palm Oil Seed Certification & Traceability',
+      id: 'BenihNusa: Sertifikasi & Traceability Bibit Sawit',
+      en: 'BenihNusa: Palm Oil Seed Certification & Traceability',
     },
     description: {
       id: 'Rancang bangun sistem sertifikasi dan traceability bibit sawit berbasis Hyperledger Fabric.',
