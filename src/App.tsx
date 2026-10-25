@@ -10,7 +10,7 @@ import About from './sections/About';
 import Interests from './sections/Interests';
 import Projects from './sections/Projects';
 import Achievements from './sections/Achievements';
-import Leadership from './sections/Leadership';
+import Activities from './sections/Activities';
 import Contact from './sections/Contact';
 import ScrollProgress from './components/ScrollProgress';
 
@@ -57,7 +57,7 @@ function AppContent() {
         <Interests />
         <Projects />
         <Achievements />
-        <Leadership />
+        <Activities />
         <Contact />
       </main>
       <Footer />

@@ -8,7 +8,7 @@ export const en = {
     about: 'About',
     projects: 'Projects',
     achievements: 'Achievements',
-    leadership: 'Leadership',
+    activities: 'Activities',
     contact: 'Contact',
   },
   hero: {
@@ -90,12 +90,13 @@ export const en = {
     viewCertificate: 'View certificate',
     closeCertificate: 'Close',
   },
-  leadership: {
-    title: 'Leadership & Activities',
-    subtitle: 'Organizational experience and community contributions',
-    role: 'Role',
-    period: 'Period',
-    activities: 'Activities',
+  activities: {
+    title: 'Activities',
+    subtitle: 'Organizational activities and community service',
+    groupOrg: 'Student Organization Activities',
+    groupCommunity: 'Community Service',
+    prevPhoto: 'Previous photo',
+    nextPhoto: 'Next photo',
   },
   contact: {
     title: 'Get in Touch',

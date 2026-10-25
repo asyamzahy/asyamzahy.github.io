@@ -8,7 +8,7 @@ export const id = {
     about: 'Tentang',
     projects: 'Proyek',
     achievements: 'Prestasi',
-    leadership: 'Kepemimpinan',
+    activities: 'Aktivitas',
     contact: 'Kontak',
   },
   hero: {
@@ -90,12 +90,13 @@ export const id = {
     viewCertificate: 'Lihat sertifikat',
     closeCertificate: 'Tutup',
   },
-  leadership: {
-    title: 'Kepemimpinan & Aktivitas',
-    subtitle: 'Pengalaman organisasi dan kontribusi komunitas',
-    role: 'Peran',
-    period: 'Periode',
-    activities: 'Aktivitas',
+  activities: {
+    title: 'Aktivitas',
+    subtitle: 'Kegiatan organisasi dan pengabdian kepada masyarakat',
+    groupOrg: 'Kegiatan UKM',
+    groupCommunity: 'Pengabdian kepada Masyarakat',
+    prevPhoto: 'Foto sebelumnya',
+    nextPhoto: 'Foto berikutnya',
   },
   contact: {
     title: 'Hubungi Saya',

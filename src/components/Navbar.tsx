@@ -10,7 +10,7 @@ const navItems = [
   { key: 'about', href: '#about' },
   { key: 'projects', href: '#projects' },
   { key: 'achievements', href: '#achievements' },
-  { key: 'leadership', href: '#leadership' },
+  { key: 'activities', href: '#activities' },
   { key: 'contact', href: '#contact' },
 ] as const;
 
