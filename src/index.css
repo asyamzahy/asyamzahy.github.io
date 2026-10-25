@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 /* Palet: kertas putih-dingin, tinta gelap, satu aksen biru baja.
-   Otomatis mengikuti mode terang/gelap perangkat. */
+   Default mengikuti perangkat; pilihan manual lewat tombol tema
+   disimpan sebagai data-theme="light" | "dark" pada <html>. */
 :root {
+  color-scheme: light dark;
   --paper: #f6f6f4;
   --ink: #16181d;
   --muted: #4f5763;
@@ -13,7 +15,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --paper: #0f1114;
     --ink: #eceef1;
     --muted: #a3aab5;
@@ -22,6 +24,19 @@
     --surface: #171a1f;
     --accent: #93acd9;
   }
+}
+
+:root[data-theme='light'] { color-scheme: light; }
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #0f1114;
+  --ink: #eceef1;
+  --muted: #a3aab5;
+  --faint: #727a86;
+  --line: #23272d;
+  --surface: #171a1f;
+  --accent: #93acd9;
 }
 
 @theme inline {

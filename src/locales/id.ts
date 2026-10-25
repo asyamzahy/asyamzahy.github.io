@@ -1,4 +1,8 @@
 export const id = {
+  theme: {
+    toLight: 'Ganti ke tampilan terang',
+    toDark: 'Ganti ke tampilan gelap',
+  },
   nav: {
     home: 'Beranda',
     about: 'Tentang',

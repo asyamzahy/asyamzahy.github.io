@@ -1,4 +1,8 @@
 export const en = {
+  theme: {
+    toLight: 'Switch to light mode',
+    toDark: 'Switch to dark mode',
+  },
   nav: {
     home: 'Home',
     about: 'About',

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -83,10 +84,12 @@ export default function Navbar() {
             </a>
           ))}
           <LanguageSwitcher />
+          <ThemeToggle />
         </div>
 
         <div className="flex items-center gap-5 md:hidden">
           <LanguageSwitcher />
+          <ThemeToggle />
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="-mr-1 p-1 text-ink"
