@@ -65,7 +65,7 @@ export default function Navbar() {
           className="font-serif text-xl tracking-tight text-ink"
           aria-label="Home"
         >
-          Asyam
+          Asyam Zahy Pratama Widodo
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
