@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 'zalasmart',
     videoUrl: 'https://youtu.be/APVYVnX7juI',
-    team: ['Asyam', 'Muhamad Zakky', 'Tashya Aulia'],
+    team: ['Asyam Zahy Pratama Widodo', 'Muhamad Zakky', 'Tashya Aulia'],
     category: 'IoT',
     technologies: ['ESP32', 'TDS Sensor', 'MQTT', 'Firebase Realtime Database', 'Actuators'],
 
@@ -63,7 +63,7 @@ export const projects: Project[] = [
   {
     id: 'benihnusa',
     videoUrl: 'https://youtu.be/BEHFmz51890',
-    team: ['Asyam', 'Khalifa Maulana', 'Tashya Aulia'],
+    team: ['Asyam Zahy Pratama Widodo', 'Khalifa Maulana', 'Tashya Aulia'],
     category: 'Blockchain',
     technologies: ['Hyperledger Fabric', 'Digital Passport', 'QR Code', 'Blockchain'],
 
@@ -103,7 +103,7 @@ export const projects: Project[] = [
   {
     id: 'adaptive-traffic',
     videoUrl: 'https://youtu.be/WdU8SicieGI',
-    team: ['Asyam', 'Muhamad Zakky', 'Tashya Aulia'],
+    team: ['Asyam Zahy Pratama Widodo', 'Muhamad Zakky', 'Tashya Aulia'],
     category: 'AI/ML',
     technologies: ['Reinforcement Learning', 'Python', 'Simulation', 'Traffic Control'],
 
@@ -143,7 +143,7 @@ export const projects: Project[] = [
   {
     id: 'hydroponic-anomaly',
     videoUrl: 'https://youtu.be/JAjv9ic-E_k',
-    team: ['Asyam', 'Muhamad Zakky', 'M. Ridho Saputra'],
+    team: ['Asyam Zahy Pratama Widodo', 'Muhamad Zakky', 'M. Ridho Saputra'],
     category: 'AI/ML',
     technologies: ['YOLO', 'MQTT', 'Computer Vision', 'Python', 'Precision Farming'],
 

@@ -10,7 +10,7 @@ export const en = {
   hero: {
     greeting: "Hi, I'm",
     name: 'Asyam Zahy Pratama Widodo',
-    headline: 'Learning and building networking, IoT, and security systems, one project at a time.',
+    headline: 'I made this site to document my learning process and the projects I have worked on with my team, not to show off. I hope it can be a place to learn from and to get to know me for anyone who wants to discuss or collaborate.',
     subtitle: 'D4 Computer Engineering Technology Student — Politeknik Caltex Riau',
     cta1: 'Explore My Projects',
     cta2: 'Contact Me',
@@ -19,7 +19,7 @@ export const en = {
   about: {
     title: 'About Me',
     description:
-      'I am a Computer Engineering Technology student at Politeknik Caltex Riau with a background in Computer and Network Engineering. My focus is on computer networking, infrastructure, and system security.\n\nThrough lab work, I am used to configuring networks and Linux servers. Outside the classroom, I work on IoT, blockchain, and artificial intelligence projects, including sensor- and camera-based hydroponic systems and a palm oil seed traceability system. Some of them took me to national-level competitions, including 1st Place in the Innovation Category at KMIPN VIII 2026.\n\nI am grateful for the opportunities I have received. I learn best through hands-on practice and keep improving how I solve problems.\n\nI made this site to record my learning journey, not to show off. The results here would not exist without my team and supervisor; thank you for the guidance and collaboration. Stay humble, keep learning.',
+      'I am a Computer Engineering Technology student at Politeknik Caltex Riau with a background in Computer and Network Engineering. I am currently deepening my knowledge of computer networking, infrastructure, and system security.\n\nDuring my studies, I have learned through networking and Linux lab work, then tried to apply it to IoT, blockchain, and artificial intelligence projects with my team.\n\nI am grateful for the opportunities and guidance from my teammates and supervisor. There is still much for me to learn, and I learn best through hands-on practice while continuing to improve how I solve problems.',
     education: 'Education',
     degree: 'D4 Computer Engineering Technology',
     institution: 'Politeknik Caltex Riau',

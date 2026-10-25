@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import type { Project } from '../data/projects';
-import { getYoutubeId } from '../data/projects';
+import { getYoutubeId, SUPERVISOR } from '../data/projects';
 import type { Lang } from '../context/LanguageContext';
 import { useLanguage } from '../context/LanguageContext';
 import SmartImage from './SmartImage';
@@ -32,7 +32,7 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className="group flex flex-col transition-[translate] duration-300 ease-out hover:-translate-y-1"
+      className="group flex flex-col"
     >
       <div className="overflow-hidden rounded-md">
         {videoId ? (
@@ -71,6 +71,14 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
         <p className="mt-4 text-sm text-faint">
           {project.technologies.slice(0, 4).join(', ')}
           {project.technologies.length > 4 && ` +${project.technologies.length - 4}`}
+        </p>
+        {project.team && (
+          <p className="mt-3 text-sm leading-relaxed text-faint">
+            {t.projects.team}: {project.team.join(', ')}
+          </p>
+        )}
+        <p className="mt-1 text-sm leading-relaxed text-faint">
+          {t.projects.supervisor}: {SUPERVISOR.name}
         </p>
         <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
           <button onClick={() => onViewDetails(project)} className={linkClass} id={`project-${project.id}-details`}>
