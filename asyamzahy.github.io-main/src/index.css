@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* Palet: kertas putih-dingin, tinta gelap, satu aksen biru baja.
+   Otomatis mengikuti mode terang/gelap perangkat. */
+:root {
+  --paper: #f6f6f4;
+  --ink: #16181d;
+  --muted: #4f5763;
+  --faint: #7d8591;
+  --line: #e0e3e7;
+  --surface: #eceef0;
+  --accent: #2f4b7c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1114;
+    --ink: #eceef1;
+    --muted: #a3aab5;
+    --faint: #727a86;
+    --line: #23272d;
+    --surface: #171a1f;
+    --accent: #93acd9;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Animasi halus: hanya transform + opacity, easing yang sama dengan hero */
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.rise {
+  animation: rise-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--d, 0ms);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Underline tipis yang meluncur dari kiri pada tautan navigasi */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: -5px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover::after,
+.nav-link:focus-visible::after { transform: scaleX(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

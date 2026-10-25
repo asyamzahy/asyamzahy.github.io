@@ -1,0 +1,110 @@
+export const en = {
+  nav: {
+    home: 'Home',
+    about: 'About',
+    projects: 'Projects',
+    achievements: 'Achievements',
+    leadership: 'Leadership',
+    contact: 'Contact',
+  },
+  hero: {
+    greeting: "Hi, I'm",
+    name: 'Asyam Zahy Pratama Widodo',
+    headline: 'Learning and building networking, IoT, and security systems, one project at a time.',
+    subtitle: 'D4 Computer Engineering Technology Student — Politeknik Caltex Riau',
+    cta1: 'Explore My Projects',
+    cta2: 'Contact Me',
+    fields: ['Networking', 'Cybersecurity', 'Internet of Things', 'Linux & Infrastructure'],
+  },
+  about: {
+    title: 'About Me',
+    description:
+      'I am a D4 Computer Engineering Technology student at Politeknik Caltex Riau, with a background in Computer and Network Engineering. My focus is computer networking, network infrastructure, and system security, backed by hands-on labs, IoT, blockchain, and AI projects, and several national-level competitions. I learn best by doing, and I keep improving how I solve problems systematically.',
+    note:
+      'A note to myself: I made this site to record my learning journey, not to show off. What is written here would not exist without my team and supervisor. Stay humble, keep learning.',
+    education: 'Education',
+    degree: 'D4 Computer Engineering Technology',
+    institution: 'Politeknik Caltex Riau',
+    background: 'Background: Vocational School — Computer and Network Engineering',
+    gpaLabel: 'Last Known GPA',
+    gpa: '3.64',
+    focus: 'Primary Focus',
+    focusValue: 'Computer Networking',
+  },
+  interests: {
+    title: 'Technical Interests',
+    subtitle: 'Areas I am currently learning and developing',
+    items: [
+      {
+        title: 'Networking & Network Infrastructure',
+        description: 'Design, configuration, and management of computer networks.',
+      },
+      {
+        title: 'Cybersecurity Fundamentals',
+        description: 'Fundamentals of system and network security.',
+      },
+      {
+        title: 'Linux & System Administration',
+        description: 'Server administration and Linux-based systems.',
+      },
+      {
+        title: 'IoT Systems',
+        description: 'Connected systems, sensors, and data communication.',
+      },
+      {
+        title: 'Blockchain Applications',
+        description: 'Blockchain applications for traceability and transparency.',
+      },
+      {
+        title: 'Computer Vision & AI',
+        description: 'Image processing and artificial intelligence applications.',
+      },
+    ],
+  },
+  projects: {
+    title: 'Projects',
+    subtitle: 'Projects I have worked on and am working on with my team',
+    filterAll: 'All',
+    viewDetails: 'View Details',
+    watchVideo: 'Watch Video',
+    overview: 'Project Overview',
+    team: 'Team',
+    supervisor: 'Supervisor',
+    problem: 'Problem Statement',
+    solution: 'Proposed Solution',
+    contribution: 'My Contribution',
+    techUsed: 'Technologies Used',
+    implementation: 'Implementation Details',
+    status: 'Project Status',
+    close: 'Close',
+    github: 'GitHub',
+    liveDemo: 'Live Demo',
+  },
+  achievements: {
+    title: 'Achievements & Certifications',
+    subtitle: 'Competition results and certifications I am grateful for',
+    competitions: 'Competitions',
+    certifications: 'Certifications',
+  },
+  leadership: {
+    title: 'Leadership & Activities',
+    subtitle: 'Organizational experience and community contributions',
+    role: 'Role',
+    period: 'Period',
+    activities: 'Activities',
+  },
+  contact: {
+    title: 'Get in Touch',
+    subtitle: 'Interested in collaborating or want to discuss something?',
+    emailMe: 'Email Me',
+    downloadCv: 'Download CV',
+    cvNotAvailable: 'CV not yet available',
+  },
+  footer: {
+    rights: 'Copyright',
+    builtWith: 'Built with React, TypeScript & Tailwind CSS',
+  },
+  common: {
+    scrollToTop: 'Back to top',
+  },
+} as const;
