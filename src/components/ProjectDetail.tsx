@@ -2,7 +2,7 @@ import { useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 import type { Project } from '../data/projects';
-import { getYoutubeId } from '../data/projects';
+import { getYoutubeId, SUPERVISOR } from '../data/projects';
 import type { Lang } from '../context/LanguageContext';
 import { useLanguage } from '../context/LanguageContext';
 import SmartImage from './SmartImage';
@@ -95,6 +95,19 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
 
             <div className="space-y-8 px-6 py-8 sm:px-10 sm:py-10">
               <Block title={t.projects.overview}>{project.overview[l]}</Block>
+              {project.team && project.team.length > 0 && (
+                <Block title={t.projects.team}>{project.team.join(', ')}</Block>
+              )}
+              <Block title={t.projects.supervisor}>
+                <a
+                  href={SUPERVISOR.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ink underline decoration-line underline-offset-[5px] transition-colors hover:decoration-accent"
+                >
+                  {SUPERVISOR.name}
+                </a>
+              </Block>
               <Block title={t.projects.problem}>{project.problem[l]}</Block>
               <Block title={t.projects.solution}>{project.solution[l]}</Block>
               <Block title={t.projects.contribution}>{project.contribution[l]}</Block>

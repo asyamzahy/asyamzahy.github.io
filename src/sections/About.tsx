@@ -6,9 +6,11 @@ export default function About() {
 
   return (
     <Section id="about" title={t.about.title}>
-      <p className="max-w-2xl font-serif text-xl leading-[1.7] text-ink sm:text-[1.375rem]">
-        {t.about.description}
-      </p>
+      <div className="max-w-2xl space-y-6 font-serif text-lg leading-[1.75] text-ink sm:text-xl">
+        {t.about.description.split('\n\n').map((para, i) => (
+          <p key={i}>{para}</p>
+        ))}
+      </div>
 
       <dl className="mt-14 max-w-2xl">
         <Fact label={t.about.education}>

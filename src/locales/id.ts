@@ -10,7 +10,7 @@ export const id = {
   hero: {
     greeting: 'Halo, saya',
     name: 'Asyam Zahy Pratama Widodo',
-    headline: 'Membangun Jaringan. Mendalami Teknologi. Menghadirkan Solusi Nyata.',
+    headline: 'Belajar dan membangun sistem jaringan, IoT, dan keamanan, satu proyek dalam satu waktu.',
     subtitle: 'Mahasiswa D4 Teknologi Rekayasa Komputer — Politeknik Caltex Riau',
     cta1: 'Jelajahi Proyek Saya',
     cta2: 'Hubungi Saya',
@@ -19,7 +19,7 @@ export const id = {
   about: {
     title: 'Tentang Saya',
     description:
-      'Saya adalah mahasiswa Teknologi Rekayasa Komputer di Politeknik Caltex Riau dengan latar belakang Teknik Komputer dan Jaringan. Saya tertarik mendalami computer networking, infrastruktur jaringan, dan keamanan sistem. Melalui praktikum, proyek teknologi, kompetisi, dan kegiatan organisasi, saya terus mengembangkan kemampuan teknis serta belajar menyelesaikan masalah secara sistematis.',
+      'Saya mahasiswa Teknologi Rekayasa Komputer di Politeknik Caltex Riau dengan latar belakang Teknik Komputer dan Jaringan. Fokus saya ada pada jaringan komputer, infrastruktur, dan keamanan sistem.\n\nLewat praktikum, saya terbiasa mengonfigurasi jaringan dan server Linux. Di luar kelas, saya mengerjakan proyek IoT, blockchain, dan kecerdasan buatan, termasuk sistem hidroponik berbasis sensor dan kamera serta sistem traceability bibit sawit. Beberapa di antaranya membawa saya ke kompetisi tingkat nasional, antara lain Juara 1 Kategori Cipta Inovasi di KMIPN VIII 2026.\n\nSaya bersyukur atas kesempatan yang saya dapat. Saya terbiasa belajar lewat praktik langsung dan terus memperbaiki cara saya menyelesaikan masalah.\n\nSitus ini saya buat untuk mencatat perjalanan belajar, bukan untuk pamer. Hasil di sini tidak lepas dari tim dan dosen pembimbing; terima kasih untuk bimbingan dan kerja samanya. Tetap rendah hati, tetap belajar.',
     education: 'Pendidikan',
     degree: 'D4 Teknologi Rekayasa Komputer',
     institution: 'Politeknik Caltex Riau',
@@ -66,6 +66,8 @@ export const id = {
     viewDetails: 'Lihat Detail',
     watchVideo: 'Tonton Video',
     overview: 'Gambaran Proyek',
+    team: 'Tim',
+    supervisor: 'Dosen Pembimbing',
     problem: 'Permasalahan',
     solution: 'Solusi yang Diusulkan',
     contribution: 'Kontribusi Saya',
