@@ -1,0 +1,105 @@
+export const en = {
+  nav: {
+    home: 'Home',
+    about: 'About',
+    projects: 'Projects',
+    achievements: 'Achievements',
+    leadership: 'Leadership',
+    contact: 'Contact',
+  },
+  hero: {
+    greeting: "Hi, I'm",
+    name: 'Asyam Zahy Pratama Widodo',
+    headline: 'Building Networks. Exploring Technology. Creating Real-World Solutions.',
+    subtitle: 'D4 Computer Engineering Technology Student — Politeknik Caltex Riau',
+    cta1: 'Explore My Projects',
+    cta2: 'Contact Me',
+    fields: ['Networking', 'Cybersecurity', 'Internet of Things', 'Linux & Infrastructure'],
+  },
+  about: {
+    title: 'About Me',
+    description:
+      'I am a Computer Engineering Technology student at Politeknik Caltex Riau with a background in Computer and Network Engineering. I am interested in computer networking, network infrastructure, and system security. Through hands-on labs, technology projects, competitions, and organizational activities, I continue to develop my technical skills and problem-solving abilities.',
+    education: 'Education',
+    degree: 'D4 Computer Engineering Technology',
+    institution: 'Politeknik Caltex Riau',
+    background: 'Background: Vocational School — Computer and Network Engineering',
+    gpaLabel: 'Last Known GPA',
+    gpa: '3.64',
+    focus: 'Primary Focus',
+    focusValue: 'Computer Networking',
+  },
+  interests: {
+    title: 'Technical Interests',
+    subtitle: 'Areas I am currently learning and developing',
+    items: [
+      {
+        title: 'Networking & Network Infrastructure',
+        description: 'Design, configuration, and management of computer networks.',
+      },
+      {
+        title: 'Cybersecurity Fundamentals',
+        description: 'Fundamentals of system and network security.',
+      },
+      {
+        title: 'Linux & System Administration',
+        description: 'Server administration and Linux-based systems.',
+      },
+      {
+        title: 'IoT Systems',
+        description: 'Connected systems, sensors, and data communication.',
+      },
+      {
+        title: 'Blockchain Applications',
+        description: 'Blockchain applications for traceability and transparency.',
+      },
+      {
+        title: 'Computer Vision & AI',
+        description: 'Image processing and artificial intelligence applications.',
+      },
+    ],
+  },
+  projects: {
+    title: 'Featured Projects',
+    subtitle: 'Projects I have worked on and am currently developing',
+    filterAll: 'All',
+    viewDetails: 'View Details',
+    overview: 'Project Overview',
+    problem: 'Problem Statement',
+    solution: 'Proposed Solution',
+    contribution: 'My Contribution',
+    techUsed: 'Technologies Used',
+    implementation: 'Implementation Details',
+    status: 'Project Status',
+    close: 'Close',
+    github: 'GitHub',
+    liveDemo: 'Live Demo',
+  },
+  achievements: {
+    title: 'Achievements & Certifications',
+    subtitle: 'Competition results and professional certifications',
+    competitions: 'Competitions',
+    certifications: 'Certifications',
+  },
+  leadership: {
+    title: 'Leadership & Activities',
+    subtitle: 'Organizational experience and community contributions',
+    role: 'Role',
+    period: 'Period',
+    activities: 'Activities',
+  },
+  contact: {
+    title: 'Get in Touch',
+    subtitle: 'Interested in collaborating or want to discuss something?',
+    emailMe: 'Email Me',
+    downloadCv: 'Download CV',
+    cvNotAvailable: 'CV not yet available',
+  },
+  footer: {
+    rights: 'Copyright',
+    builtWith: 'Built with React, TypeScript & Tailwind CSS',
+  },
+  common: {
+    scrollToTop: 'Back to top',
+  },
+} as const;

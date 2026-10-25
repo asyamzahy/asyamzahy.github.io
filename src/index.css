@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* Palet: kertas putih-dingin, tinta gelap, satu aksen biru baja.
+   Otomatis mengikuti mode terang/gelap perangkat. */
+:root {
+  --paper: #f6f6f4;
+  --ink: #16181d;
+  --muted: #4f5763;
+  --faint: #7d8591;
+  --line: #e0e3e7;
+  --surface: #eceef0;
+  --accent: #2f4b7c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1114;
+    --ink: #eceef1;
+    --muted: #a3aab5;
+    --faint: #727a86;
+    --line: #23272d;
+    --surface: #171a1f;
+    --accent: #93acd9;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

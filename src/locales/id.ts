@@ -1,0 +1,105 @@
+export const id = {
+  nav: {
+    home: 'Beranda',
+    about: 'Tentang',
+    projects: 'Proyek',
+    achievements: 'Prestasi',
+    leadership: 'Kepemimpinan',
+    contact: 'Kontak',
+  },
+  hero: {
+    greeting: 'Halo, saya',
+    name: 'Asyam Zahy Pratama Widodo',
+    headline: 'Membangun Jaringan. Mendalami Teknologi. Menghadirkan Solusi Nyata.',
+    subtitle: 'Mahasiswa D4 Teknologi Rekayasa Komputer — Politeknik Caltex Riau',
+    cta1: 'Jelajahi Proyek Saya',
+    cta2: 'Hubungi Saya',
+    fields: ['Networking', 'Cybersecurity', 'Internet of Things', 'Linux & Infrastructure'],
+  },
+  about: {
+    title: 'Tentang Saya',
+    description:
+      'Saya adalah mahasiswa Teknologi Rekayasa Komputer di Politeknik Caltex Riau dengan latar belakang Teknik Komputer dan Jaringan. Saya tertarik mendalami computer networking, infrastruktur jaringan, dan keamanan sistem. Melalui praktikum, proyek teknologi, kompetisi, dan kegiatan organisasi, saya terus mengembangkan kemampuan teknis serta belajar menyelesaikan masalah secara sistematis.',
+    education: 'Pendidikan',
+    degree: 'D4 Teknologi Rekayasa Komputer',
+    institution: 'Politeknik Caltex Riau',
+    background: 'Latar belakang: SMK Teknik Komputer dan Jaringan (TKJ)',
+    gpaLabel: 'IPK Terakhir',
+    gpa: '3.64',
+    focus: 'Fokus Utama',
+    focusValue: 'Computer Networking',
+  },
+  interests: {
+    title: 'Minat Teknis',
+    subtitle: 'Bidang yang sedang saya pelajari dan kembangkan',
+    items: [
+      {
+        title: 'Networking & Network Infrastructure',
+        description: 'Desain, konfigurasi, dan manajemen jaringan komputer.',
+      },
+      {
+        title: 'Cybersecurity Fundamentals',
+        description: 'Dasar-dasar keamanan sistem dan jaringan.',
+      },
+      {
+        title: 'Linux & System Administration',
+        description: 'Administrasi server dan sistem berbasis Linux.',
+      },
+      {
+        title: 'IoT Systems',
+        description: 'Sistem terhubung, sensor, dan komunikasi data.',
+      },
+      {
+        title: 'Blockchain Applications',
+        description: 'Penerapan blockchain untuk traceability dan transparansi.',
+      },
+      {
+        title: 'Computer Vision & AI',
+        description: 'Pengolahan citra dan penerapan kecerdasan buatan.',
+      },
+    ],
+  },
+  projects: {
+    title: 'Proyek Unggulan',
+    subtitle: 'Proyek yang telah dan sedang saya kerjakan',
+    filterAll: 'Semua',
+    viewDetails: 'Lihat Detail',
+    overview: 'Gambaran Proyek',
+    problem: 'Permasalahan',
+    solution: 'Solusi yang Diusulkan',
+    contribution: 'Kontribusi Saya',
+    techUsed: 'Teknologi yang Digunakan',
+    implementation: 'Detail Implementasi',
+    status: 'Status Proyek',
+    close: 'Tutup',
+    github: 'GitHub',
+    liveDemo: 'Live Demo',
+  },
+  achievements: {
+    title: 'Prestasi & Sertifikasi',
+    subtitle: 'Pencapaian di kompetisi dan sertifikasi profesional',
+    competitions: 'Kompetisi',
+    certifications: 'Sertifikasi',
+  },
+  leadership: {
+    title: 'Kepemimpinan & Aktivitas',
+    subtitle: 'Pengalaman organisasi dan kontribusi komunitas',
+    role: 'Peran',
+    period: 'Periode',
+    activities: 'Aktivitas',
+  },
+  contact: {
+    title: 'Hubungi Saya',
+    subtitle: 'Tertarik berkolaborasi atau ingin berdiskusi?',
+    emailMe: 'Kirim Email',
+    downloadCv: 'Unduh CV',
+    cvNotAvailable: 'CV belum tersedia',
+  },
+  footer: {
+    rights: 'Hak cipta',
+    builtWith: 'Dibangun dengan React, TypeScript & Tailwind CSS',
+  },
+  common: {
+    scrollToTop: 'Kembali ke atas',
+  },
+} as const;
