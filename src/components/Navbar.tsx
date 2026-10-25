@@ -41,7 +41,7 @@ export default function Navbar() {
 
   const handleNavClick = useCallback((href: string) => {
     setMobileOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(href)?.scrollIntoView({ behavior: 'auto' });
   }, []);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export default function Navbar() {
               key={item.key}
               href={item.href}
               onClick={(e) => { e.preventDefault(); handleNavClick(item.href); }}
-              className={`text-sm transition-colors duration-200 ${
+              className={`nav-link text-sm transition-colors duration-200 ${
                 activeSection === item.key ? 'text-ink' : 'text-faint hover:text-ink'
               }`}
               aria-current={activeSection === item.key ? 'true' : undefined}

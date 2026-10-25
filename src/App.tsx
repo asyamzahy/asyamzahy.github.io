@@ -11,6 +11,7 @@ import Projects from './sections/Projects';
 import Achievements from './sections/Achievements';
 import Leadership from './sections/Leadership';
 import Contact from './sections/Contact';
+import ScrollProgress from './components/ScrollProgress';
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -32,7 +33,7 @@ function ScrollToTop() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.15 }}
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}
           className="fixed bottom-6 right-6 z-40 flex h-10 w-10 items-center justify-center rounded-full border border-line bg-paper text-faint transition-colors duration-200 hover:text-ink"
           aria-label={t.common.scrollToTop}
           id="scroll-to-top"
@@ -47,6 +48,7 @@ function ScrollToTop() {
 function AppContent() {
   return (
     <div className="relative min-h-screen">
+      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />

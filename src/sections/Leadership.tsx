@@ -1,6 +1,7 @@
 import { useLanguage } from '../context/LanguageContext';
 import type { Lang } from '../context/LanguageContext';
 import Section from '../components/Section';
+import Reveal from '../components/Reveal';
 import { experiences } from '../data/experiences';
 
 export default function Leadership() {
@@ -8,10 +9,10 @@ export default function Leadership() {
   const l = lang as Lang;
 
   return (
-    <Section id="leadership" title={t.leadership.title} subtitle={t.leadership.subtitle}>
+    <Section id="leadership" title={t.leadership.title} subtitle={t.leadership.subtitle} revealContent={false}>
       <div className="space-y-16">
         {experiences.map((exp) => (
-          <article key={exp.id}>
+          <Reveal as="article" key={exp.id}>
             <h3 className="font-serif text-2xl leading-snug tracking-tight text-ink">
               {exp.organization}
             </h3>
@@ -28,7 +29,7 @@ export default function Leadership() {
                 </li>
               ))}
             </ul>
-          </article>
+          </Reveal>
         ))}
       </div>
     </Section>

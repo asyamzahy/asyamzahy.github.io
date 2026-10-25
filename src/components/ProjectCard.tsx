@@ -32,7 +32,7 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className="group flex flex-col"
+      className="group flex flex-col transition-[translate] duration-300 ease-out hover:-translate-y-1"
     >
       <div className="overflow-hidden rounded-md">
         {videoId ? (

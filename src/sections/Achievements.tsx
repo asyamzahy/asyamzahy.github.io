@@ -1,5 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import Section from '../components/Section';
+import Reveal from '../components/Reveal';
 import AchievementCard from '../components/AchievementCard';
 import { achievements } from '../data/achievements';
 
@@ -12,25 +13,25 @@ export default function Achievements() {
   const certifications = achievements.filter((a) => a.type === 'certification').sort(byYear);
 
   return (
-    <Section id="achievements" title={t.achievements.title} subtitle={t.achievements.subtitle}>
+    <Section id="achievements" title={t.achievements.title} subtitle={t.achievements.subtitle} revealContent={false}>
       <div className="space-y-16">
-        <div>
+        <Reveal>
           <h3 className="mb-4 font-serif text-xl text-ink">{t.achievements.competitions}</h3>
           <ul className="border-b border-line">
             {competitions.map((a) => (
               <AchievementCard key={a.id} achievement={a} />
             ))}
           </ul>
-        </div>
+        </Reveal>
 
-        <div>
+        <Reveal>
           <h3 className="mb-4 font-serif text-xl text-ink">{t.achievements.certifications}</h3>
           <ul className="border-b border-line">
             {certifications.map((a) => (
               <AchievementCard key={a.id} achievement={a} />
             ))}
           </ul>
-        </div>
+        </Reveal>
       </div>
     </Section>
   );
