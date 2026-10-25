@@ -64,6 +64,7 @@ export const en = {
     subtitle: 'Projects I have worked on and am currently developing',
     filterAll: 'All',
     viewDetails: 'View Details',
+    watchVideo: 'Watch Video',
     overview: 'Project Overview',
     problem: 'Problem Statement',
     solution: 'Proposed Solution',

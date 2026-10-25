@@ -2,9 +2,11 @@ import { useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 import type { Project } from '../data/projects';
+import { getYoutubeId } from '../data/projects';
 import type { Lang } from '../context/LanguageContext';
 import { useLanguage } from '../context/LanguageContext';
 import SmartImage from './SmartImage';
+import VideoThumb from './VideoThumb';
 
 interface ProjectDetailProps {
   project: Project | null;
@@ -73,11 +75,23 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
               </button>
             </div>
 
-            <SmartImage
-              src={project.image}
-              alt={project.title[l]}
-              className="aspect-[16/9] w-full object-cover"
-            />
+            {getYoutubeId(project.videoUrl) ? (
+              <a
+                href={project.videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${t.projects.watchVideo}: ${project.title[l]}`}
+                className="group block"
+              >
+                <VideoThumb videoId={getYoutubeId(project.videoUrl)!} alt={project.title[l]} />
+              </a>
+            ) : (
+              <SmartImage
+                src={project.image}
+                alt={project.title[l]}
+                className="aspect-[16/9] w-full object-cover"
+              />
+            )}
 
             <div className="space-y-8 px-6 py-8 sm:px-10 sm:py-10">
               <Block title={t.projects.overview}>{project.overview[l]}</Block>
@@ -89,8 +103,18 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
               <Block title={t.projects.status}>{project.status[l]}</Block>
             </div>
 
-            {(project.githubUrl || project.liveUrl) && (
+            {(project.githubUrl || project.liveUrl || project.videoUrl) && (
               <div className="flex flex-wrap gap-x-8 gap-y-3 border-t border-line px-6 py-6 sm:px-10">
+                {project.videoUrl && (
+                  <a
+                    href={project.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-ink underline decoration-line underline-offset-[6px] hover:decoration-accent"
+                  >
+                    {t.projects.watchVideo}
+                  </a>
+                )}
                 {project.githubUrl && (
                   <a
                     href={project.githubUrl}

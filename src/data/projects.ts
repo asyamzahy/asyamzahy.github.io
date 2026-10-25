@@ -5,6 +5,7 @@ export interface Project {
   category: ProjectCategory;
   technologies: string[];
   image?: string;
+  videoUrl?: string;
   githubUrl?: string;
   liveUrl?: string;
   title: { id: string; en: string };
@@ -20,21 +21,21 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'zalasmart',
-    image: '/images/zalasmart.jpg',
+    videoUrl: 'https://youtu.be/APVYVnX7juI',
     category: 'IoT',
     technologies: ['ESP32', 'TDS Sensor', 'MQTT', 'Firebase Realtime Database', 'Actuators'],
 
     title: {
-      id: 'Ponik — Smart Hydroponics',
-      en: 'Ponik — Smart Hydroponics',
+      id: 'ZalaSmart — Smart Hydroponics',
+      en: 'ZalaSmart — Smart Hydroponics',
     },
     description: {
       id: 'Sistem hidroponik pintar untuk pemantauan dan pengendalian kondisi budidaya tanaman.',
       en: 'Smart hydroponic system for monitoring and controlling plant cultivation conditions.',
     },
     overview: {
-      id: 'Ponik adalah sistem hidroponik pintar yang mengintegrasikan sensor, komunikasi data, dan aktuator untuk memantau serta mengendalikan kondisi budidaya tanaman secara otomatis.',
-      en: 'Ponik is a smart hydroponic system that integrates sensors, data communication, and actuators to monitor and control plant cultivation conditions automatically.',
+      id: 'ZalaSmart adalah sistem hidroponik pintar yang mengintegrasikan sensor, komunikasi data, dan aktuator untuk memantau serta mengendalikan kondisi budidaya tanaman secara otomatis.',
+      en: 'ZalaSmart is a smart hydroponic system that integrates sensors, data communication, and actuators to monitor and control plant cultivation conditions automatically.',
     },
     problem: {
       id: 'Pemantauan manual pada sistem hidroponik membutuhkan waktu dan tenaga, serta rawan terhadap kesalahan pembacaan yang dapat memengaruhi kualitas tanaman.',
@@ -59,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     id: 'benihnusa',
-    image: '/images/benihnusa.jpg',
+    videoUrl: 'https://youtu.be/BEHFmz51890',
     category: 'Blockchain',
     technologies: ['Hyperledger Fabric', 'Digital Passport', 'QR Code', 'Blockchain'],
 
@@ -98,7 +99,7 @@ export const projects: Project[] = [
   },
   {
     id: 'adaptive-traffic',
-    image: '/images/adaptive-traffic.jpg',
+    videoUrl: 'https://youtu.be/WdU8SicieGI',
     category: 'AI/ML',
     technologies: ['Reinforcement Learning', 'Python', 'Simulation', 'Traffic Control'],
 
@@ -137,7 +138,7 @@ export const projects: Project[] = [
   },
   {
     id: 'hydroponic-anomaly',
-    image: '/images/hydroponic-anomaly.jpg',
+    videoUrl: 'https://youtu.be/JAjv9ic-E_k',
     category: 'AI/ML',
     technologies: ['YOLO', 'MQTT', 'Computer Vision', 'Python', 'Precision Farming'],
 
@@ -177,3 +178,10 @@ export const projects: Project[] = [
 ];
 
 export const projectCategories: ProjectCategory[] = ['IoT', 'Blockchain', 'AI/ML', 'Networking'];
+
+/** Ambil ID video dari link youtu.be atau youtube.com/watch?v= */
+export function getYoutubeId(url?: string): string | null {
+  if (!url) return null;
+  const m = url.match(/(?:youtu\.be\/|[?&]v=|embed\/)([\w-]{11})/);
+  return m ? m[1] : null;
+}

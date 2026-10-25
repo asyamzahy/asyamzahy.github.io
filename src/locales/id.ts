@@ -64,6 +64,7 @@ export const id = {
     subtitle: 'Proyek yang telah dan sedang saya kerjakan',
     filterAll: 'Semua',
     viewDetails: 'Lihat Detail',
+    watchVideo: 'Tonton Video',
     overview: 'Gambaran Proyek',
     problem: 'Permasalahan',
     solution: 'Solusi yang Diusulkan',
